@@ -2,7 +2,7 @@ def binarySearch(arr,start,end):
   
   while start<=end:      
     mid=int((start+end)/2) 
-    if(arr[mid+1]>arr[mid]): 
+    if(arr[mid]>arr[mid+1]): 
       if (arr[start]<=arr[mid]): 
         start = mid + 1
       elif(arr[start]>=arr[mid]):
